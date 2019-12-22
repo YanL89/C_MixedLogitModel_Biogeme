@@ -1,7 +1,7 @@
 # MixedLogitModel_Biogeme
 This is an example of mixed logit model estimation through Biogeme
 
-This estimation used the first version (super old version) of BisonBiogeme which is saved in folder "Biogeme_windows". The copyright belongs to https://biogeme.epfl.ch/
+This estimation used the first version (super old version) of BisonBiogeme which is saved in folder "Biogeme_windows". The copyright belongs to EPFL - please find detailed information at https://biogeme.epfl.ch/
 
 Input data of the example is saved as "MVPS_ce_age_inattent.txt" 
 
