@@ -1,0 +1,33 @@
+++++++++ 01/23/15 10:39:50 ++++++++
+Sample size=3795
+Excluded Obs.:       0
+Total obs. in files: 3794
+Number of cases:     11385
+Statistics of attributes
+++++++++++++++++++++++++
+Name	Nbr	Mean	Min	Max	Recommended/Conservative upper bounds for Box-Cox
+bev_mpg_s	3795	0.11491	0.08	0.154	
+bev_price_s	3795	24.4739	18	32	
+choice	3795	1.48182	1	4	
+curveh_mpg_s	3795	-0.00324531	-0.098	0.142	
+curveh_price_s	3795	19.6276	-0.099	140	
+gasveh_mpg_s	3795	0.031971	0.014	0.054	
+gasveh_price_s	3795	26.607	13	50	
+hev_mpg_s	3795	0.0449191	0.02	0.068	
+hev_price_s	3795	28.725	18	50	
+one	3795	1	1	1	
+Nbr of times alternatives are available
+Alt	#
+1	3795
+2	3795
+3	3795
+4	3795
+Nbr of times alternatives are chosen
+Alt	#
+1	2787
+2	370
+3	455
+4	183
+Group membership
+Group	#
+1	3795

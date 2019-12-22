@@ -1,0 +1,71 @@
+%% This file is designed to be included into a LaTeX document
+%% See http://www.latex-project.org/ for information about LaTeX
+%% biogeme 2.2
+%% Compiled Thu Mar 15 14:58:02 WEST 2012
+%% Michel Bierlaire, EPFL
+%% Report created on 01/23/15 10:43:06
+Example of a logit model for a transportation mode choice with 4 alternatives:\\
+- not buy\\
+- gasoline car\\
+- electric car\\
+- hybrid car\\
+
+
+\begin{flushleft}
+\begin{tabular}{rcl}
+\hline
+Model &:& Mixed Multinomial Logit\\
+Number of draws &:&1000\\
+Number of estimated parameters&:&6\\
+Number of  observations &:& 3795\\
+Number of individuals&:&3795\\
+Null log-likelihood&:&-5260.987\\
+Cte log-likelihood&:&-3241.703\\
+Init log-likelihood&:&-5260.987\\
+Final log-likelihood&:&-3216.706\\
+Likelihood ratio test &:&4088.562\\
+Rho-square&:&0.389\\
+Adjusted rho-square&:&0.387\\
+Final gradient norm&:&+9.228e-003\\
+Diagnostic&:&Convergence reached...\\
+Iteration&:&25\\
+Run time&:&02:40\\
+Variance-covariance&:&from finite difference hessian\\
+Sample file&:&MVPS_ce_age_inattent.txt\\
+\end{tabular}
+\end{flushleft}
+%%
+%%
+%%
+  \begin{tabular}{l}
+\begin{tabular}{rlr@{.}lr@{.}lr@{.}lr@{.}l}
+         &                       &   \multicolumn{2}{l}{}    & \multicolumn{2}{l}{Robust}  &     \multicolumn{4}{l}{}   \\
+Parameter &                       &   \multicolumn{2}{l}{Coeff.}      & \multicolumn{2}{l}{Asympt.}  &     \multicolumn{4}{l}{}   \\
+number &  Description                     &   \multicolumn{2}{l}{estimate}      & \multicolumn{2}{l}{std. error}  &   \multicolumn{2}{l}{$t$-stat}  &   \multicolumn{2}{l}{$p$-value}   \\
+
+\hline
+
+1 & ASC\_ele & 0&333 & 0&0881 & 3&78 & 0&00 \\
+2 & ASC\_hyd & -0&649 & 0&0912 & -7&11 & 0&00 \\
+3 & ASC\_not & 1&87 & 0&0585 & 32&05 & 0&00 \\
+4 & B\_mpg & -1&83 & 0&564 & -3&24 & 0&00 \\
+5 & B\_mpg\_s & -0&0911 & 0&268 & -0&34 & 0&73 \\
+6 & B\_price & -0&0143 & 0&00258 & -5&55 & 0&00 \\
+\hline
+
+\end{tabular}
+\\
+\begin{tabular}{rcl}
+\multicolumn{3}{l}{\bf Summary statistics}\\
+\multicolumn{3}{l}{ Number of observations = $3795$} \\
+ $\mathcal{L}(0)$ &=&  $-5260.987$ \\
+ $\mathcal{L}(c)$ &=& $-3241.703$\\
+ $\mathcal{L}(\hat{\beta})$ &=& $-3216.706 $  \\
+ $-2[\mathcal{L}(0) -\mathcal{L}(\hat{\beta})]$ &=& $4088.562$ \\
+    $\rho^2$ &=&   $0.389$ \\
+    $\bar{\rho}^2$ &=&    $0.387$ \\
+\end{tabular}
+\end{tabular}
+\end{document}
+%%% Another joint format
+%%%

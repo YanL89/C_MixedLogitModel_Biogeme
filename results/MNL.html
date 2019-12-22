@@ -1,0 +1,126 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+<script src="http://transp-or.epfl.ch/biogeme/sorttable.js"></script>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title>MNL.html - Report from biogeme 2.2 [Thu Mar 15 14:58:02 WEST 2012]</title>
+<meta name="keywords" content="biogeme, discrete choice, random utility">
+<meta name="description" content="Report from biogeme 2.2 [Thu Mar 15 14:58:02 WEST 2012]">
+<meta name="author" content="Michel Bierlaire">
+<style type=text/css>
+<!--table
+.biostyle
+	{font-size:10.0pt;
+	font-weight:400;
+	font-style:normal;
+	font-family:Courier;}
+.boundstyle
+	{font-size:10.0pt;
+	font-weight:400;
+	font-style:normal;
+	font-family:Courier;
+        color:red}
+-->
+</style>
+</head>
+
+<body bgcolor="#ffffff">
+<h1>biogeme 2.2 [Thu Mar 15 14:58:02 WEST 2012]</h1>
+<h2>Michel Bierlaire, EPFL</h2>
+<p>This file has automatically been generated.</p>
+<p> 01/23/15 10:43:06</p>
+<p><font size='+1'>Tip: click on the columns headers to sort a table  [<a href='http://www.kryogenix.org/code/browser/sorttable/' target='_blank'>Credits</a>]</font></p>
+
+<table>
+<tr><td>
+Example of a logit model for a transportation mode choice with 4 alternatives:
+</td></tr>
+<tr><td>
+- not buy
+</td></tr>
+<tr><td>
+- gasoline car
+</td></tr>
+<tr><td>
+- electric car
+</td></tr>
+<tr><td>
+- hybrid car
+</td></tr>
+</table>
+
+<table border="0">
+<tr class=biostyle ><td align=right><strong>Model</strong>:</td> <td>Mixed Multinomial Logit</td></tr>
+<tr class=biostyle ><td align=right><strong>Number of draws</strong>:</td> <td>1000</td></tr>
+<tr class=biostyle><td align=right ><strong>Number of estimated parameters</strong>: </td> <td>6</td></tr>
+<tr class=biostyle><td align=right ><strong>Number of  observations</strong>: </td> <td>3795</td></tr>
+<tr class=biostyle><td align=right ><strong>Number of individuals</strong>: </td> <td>3795</td></tr>
+<tr class=biostyle><td align=right><strong>Null log-likelihood</strong>:	</td> <td>-5260.987</td></tr>
+<tr class=biostyle><td align=right><strong>Cte log-likelihood</strong>:	</td> <td>-3241.703</td></tr>
+<tr class=biostyle><td align=right><strong>Init log-likelihood</strong>:	</td> <td>-5260.987</td></tr>
+<tr class=biostyle><td align=right><strong>Final log-likelihood</strong>:	</td> <td>-3216.706</td></tr>
+<tr class=biostyle><td align=right><strong>Likelihood ratio test</strong>:	</td> <td>4088.562</td></tr>
+<tr class=biostyle><td align=right><strong>Rho-square</strong>:		</td> <td>0.389</td></tr>
+<tr class=biostyle><td align=right><strong>Adjusted rho-square</strong>:		</td> <td>0.387</td></tr>
+<tr class=biostyle><td align=right><strong>Final gradient norm</strong>:	</td> <td>+9.228e-003</td></tr>
+<tr class=biostyle><td align=right><strong>Diagnostic</strong>:	</td> <td>Convergence reached...</td></tr>
+<tr class=biostyle><td align=right><strong>Iterations</strong>:	</td> <td>25</td></tr>
+<tr class=biostyle><td align=right><strong>Run time</strong>:	</td> <td>02:40</td></tr>
+<tr class=biostyle><td align=right><strong>Variance-covariance</strong>:	</td> <td>from finite difference hessian</td></tr>
+<tr class=biostyle><td align=right><strong>Sample file</strong>:	</td><td>MVPS_ce_age_inattent.txt</td></tr></table>
+<h2>Utility parameters</h2>
+<table border="1" class="sortable">
+<tr class=biostyle><th>Name </th><th>Value		</th><th>Std err		</th><th>t-test</th><th>p-value</th><th></th><th>Robust Std err		</th><th>Robust t-test</th><th>p-value</th><th></th></tr>
+<tr class=biostyle>
+<td>ASC_ele</td><td>0.333</td><td>0.0847</td><td>3.93</td><td>0.00</td><td></td><td>0.0881</td><td>3.78</td><td>0.00</td><td></td></tr>
+<tr class=boundstyle>
+<td>ASC_gas</td><td>0.00</td><td>fixed</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr class=biostyle>
+<td>ASC_hyd</td><td>-0.649</td><td>0.0908</td><td>-7.14</td><td>0.00</td><td></td><td>0.0912</td><td>-7.11</td><td>0.00</td><td></td></tr>
+<tr class=biostyle>
+<td>ASC_not</td><td>1.87</td><td>0.0591</td><td>31.73</td><td>0.00</td><td></td><td>0.0585</td><td>32.05</td><td>0.00</td><td></td></tr>
+<tr class=biostyle>
+<td>B_mpg</td><td>-1.83</td><td>0.569</td><td>-3.21</td><td>0.00</td><td></td><td>0.564</td><td>-3.24</td><td>0.00</td><td></td></tr>
+<tr class=biostyle>
+<td>B_mpg_s</td><td>-0.0911</td><td>1.73</td><td>-0.05</td><td>0.96</td><td>*</td><td>0.268</td><td>-0.34</td><td>0.73</td><td>*</td></tr>
+<tr class=biostyle>
+<td>B_price</td><td>-0.0143</td><td>0.00248</td><td>-5.79</td><td>0.00</td><td></td><td>0.00258</td><td>-5.55</td><td>0.00</td><td></td></tr>
+</table>
+<h2>Utility functions</h2>
+<table border="1" class="sortable">
+<tr class=biostyle><th>Id</th><th>Name</th><th>Availability</th><th>Specification</th></tr><tr class=biostyle><td>1</td><td>A1_not</td><td>one</td><td>ASC_not * one + B_price * curveh_price_s + B_mpg [ B_mpg_s ]  * curveh_mpg_s</td></tr>
+<tr class=biostyle><td>2</td><td>A2_gas</td><td>one</td><td>ASC_gas * one + B_price * gasveh_price_s + B_mpg [ B_mpg_s ]  * gasveh_mpg_s</td></tr>
+<tr class=biostyle><td>3</td><td>A3_ele</td><td>one</td><td>ASC_ele * one + B_price * bev_price_s + B_mpg [ B_mpg_s ]  * bev_mpg_s</td></tr>
+<tr class=biostyle><td>4</td><td>A4_hyd</td><td>one</td><td>ASC_hyd * one + B_price * hev_price_s + B_mpg [ B_mpg_s ]  * hev_mpg_s</td></tr>
+</table>
+
+
+
+<h2>Variance of random coefficients</h2>
+<table border="1" class="sortable">
+<tr class=biostyle><th>Name</th><th>Value</th><th>Std err</th><th>t-test</th><th>Robust Std err</th><th>Robust t-test</th>
+<tr class=biostyle><td>
+B_mpg_B_mpg_s</td><td>0.00830</td><td>0.315</td><td>0.03</td><td></td></tr>
+</table>
+<h2>Correlation of coefficients</h2>
+<table border="1" class="sortable">
+<tr class=biostyle><th>Coefficient1 </th><th>Coefficient2</th><th>Covariance</th><th>Correlation</th><th>t-test</th><th>p-value</th><th></th><th>Rob. cov.</th><th>Rob. corr.</th><th>Rob. t-test</th><th>p-value</th><th></th></tr>
+<tr class=biostyle><td>
+B_mpg_s	</td><td>B_price</td><td>4.20e-005</td><td>0.00978</td><td>-0.04</td><td>0.96	</td><td>*</td><td>3.87e-005</td><td>0.0560</td><td>-0.29</td><td>0.77	</td><td>*</td><tr class=biostyle><td>
+ASC_ele	</td><td>B_mpg_s</td><td>0.000498</td><td>0.00339</td><td>0.24</td><td>0.81	</td><td>*</td><td>0.000689</td><td>0.0292</td><td>1.52</td><td>0.13	</td><td>*</td><tr class=biostyle><td>
+ASC_hyd	</td><td>B_mpg_s</td><td>-0.000234</td><td>-0.00149</td><td>-0.32</td><td>0.75	</td><td>*</td><td>-0.000266</td><td>-0.0109</td><td>-1.97</td><td>0.05	</td><td></td><tr class=biostyle><td>
+B_mpg	</td><td>B_mpg_s</td><td>0.0237</td><td>0.0241</td><td>-0.96</td><td>0.34	</td><td>*</td><td>0.00350</td><td>0.0232</td><td>-2.81</td><td>0.00	</td><td></td><tr class=biostyle><td>
+ASC_not	</td><td>B_mpg_s</td><td>0.000326</td><td>0.00319</td><td>1.13</td><td>0.26	</td><td>*</td><td>0.000602</td><td>0.0385</td><td>7.23</td><td>0.00	</td><td></td><tr class=biostyle><td>
+ASC_hyd	</td><td>B_mpg</td><td>-0.00394</td><td>-0.0761</td><td>2.02</td><td>0.04	</td><td></td><td>-0.00882</td><td>-0.172</td><td>2.01</td><td>0.04	</td><td></td><tr class=biostyle><td>
+B_mpg	</td><td>B_price</td><td>-0.000154</td><td>-0.109</td><td>-3.18</td><td>0.00	</td><td></td><td>-0.000195</td><td>-0.134</td><td>-3.21</td><td>0.00	</td><td></td><tr class=biostyle><td>
+ASC_ele	</td><td>B_mpg</td><td>-0.0270</td><td>-0.561</td><td>3.48</td><td>0.00	</td><td></td><td>-0.0303</td><td>-0.609</td><td>3.48</td><td>0.00	</td><td></td><tr class=biostyle><td>
+ASC_ele	</td><td>B_price</td><td>2.15e-005</td><td>0.102</td><td>4.11</td><td>0.00	</td><td></td><td>3.37e-005</td><td>0.148</td><td>3.96</td><td>0.00	</td><td></td><tr class=biostyle><td>
+ASC_not	</td><td>B_mpg</td><td>0.00905</td><td>0.269</td><td>6.65</td><td>0.00	</td><td></td><td>0.00585</td><td>0.178</td><td>6.65</td><td>0.00	</td><td></td><tr class=biostyle><td>
+ASC_hyd	</td><td>B_price</td><td>-1.19e-005</td><td>-0.0530</td><td>-6.97</td><td>0.00	</td><td></td><td>2.14e-006</td><td>0.00909</td><td>-6.96</td><td>0.00	</td><td></td><tr class=biostyle><td>
+ASC_ele	</td><td>ASC_hyd</td><td>0.00302</td><td>0.392</td><td>10.12</td><td>0.00	</td><td></td><td>0.00345</td><td>0.429</td><td>10.24</td><td>0.00	</td><td></td><tr class=biostyle><td>
+ASC_ele	</td><td>ASC_not</td><td>0.00200</td><td>0.399</td><td>-18.87</td><td>0.00	</td><td></td><td>0.00221</td><td>0.428</td><td>-18.73</td><td>0.00	</td><td></td><tr class=biostyle><td>
+ASC_hyd	</td><td>ASC_not</td><td>0.00253</td><td>0.471</td><td>-30.85</td><td>0.00	</td><td></td><td>0.00246</td><td>0.462</td><td>-30.59</td><td>0.00	</td><td></td><tr class=biostyle><td>
+ASC_not	</td><td>B_price</td><td>2.63e-005</td><td>0.179</td><td>32.19</td><td>0.00	</td><td></td><td>3.75e-005</td><td>0.248</td><td>32.62</td><td>0.00	</td><td></td></table>
+<p>Smallest singular value of the hessian: 0.317944</p>
+</html>

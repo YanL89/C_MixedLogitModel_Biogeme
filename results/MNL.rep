@@ -1,0 +1,81 @@
+// This file has automatically been generated.
+// 01/23/15 10:43:06
+// Michel Bierlaire, EPFL
+
+biogeme 2.2 [Thu Mar 15 14:58:02 WEST 2012]
+Michel Bierlaire, EPFL
+
+   Example of a logit model for a transportation mode choice with 4 alternatives:
+   - not buy
+   - gasoline car
+   - electric car
+   - hybrid car
+
+                         Model:  Mixed Multinomial Logit
+               Number of draws: 1000
+Number of estimated parameters: 6
+        Number of observations: 3795
+         Number of individuals: 3795
+           Null log-likelihood: -5260.987
+            Cte log-likelihood: -3241.703
+           Init log-likelihood: -5260.987
+          Final log-likelihood: -3216.706
+         Likelihood ratio test: 4088.562
+                    Rho-square: 0.389
+           Adjusted rho-square: 0.387
+           Final gradient norm: +9.228e-003
+                    Diagnostic: Convergence reached...
+                    Iterations: 25
+                      Run time: 02:40
+           Variance-covariance: from finite difference hessian
+                   Sample file: MVPS_ce_age_inattent.txt
+
+Utility parameters
+******************
+Name    Value   Std err   t-test p-val   Rob. std err Rob. t-test Rob. p-val   
+----    -----   -------   ------ -----   ------------ ----------- ----------   
+ASC_ele 0.333   0.0847    3.93   0.00    0.0881       3.78        0.00         
+ASC_gas 0.00    --fixed--                                                      
+ASC_hyd -0.649  0.0908    -7.14  0.00    0.0912       -7.11       0.00         
+ASC_not 1.87    0.0591    31.73  0.00    0.0585       32.05       0.00         
+B_mpg   -1.83   0.569     -3.21  0.00    0.564        -3.24       0.00         
+B_mpg_s -0.0911 1.73      -0.05  0.96  * 0.268        -0.34       0.73       * 
+B_price -0.0143 0.00248   -5.79  0.00    0.00258      -5.55       0.00         
+
+Variance of normal random coefficients
+**************************************
+Name          Value   Std err t-test 
+----          -----   ------- ------ 
+B_mpg_B_mpg_s 0.00830 0.315   0.03   
+
+
+Utility functions
+*****************
+1	A1_not	one	ASC_not * one + B_price * curveh_price_s + B_mpg [ B_mpg_s ]  * curveh_mpg_s
+2	A2_gas	one	ASC_gas * one + B_price * gasveh_price_s + B_mpg [ B_mpg_s ]  * gasveh_mpg_s
+3	A3_ele	one	ASC_ele * one + B_price * bev_price_s + B_mpg [ B_mpg_s ]  * bev_mpg_s
+4	A4_hyd	one	ASC_hyd * one + B_price * hev_price_s + B_mpg [ B_mpg_s ]  * hev_mpg_s
+
+
+Correlation of coefficients
+***************************
+Coeff1  Coeff2  Covariance Correlation t-test   Rob. covar. Rob. correl. Rob. t-test   
+------  ------  ---------- ----------- ------   ----------- ------------ -----------   
+B_mpg_s B_price 4.20e-005  0.00978     -0.04  * 3.87e-005   0.0560       -0.29       * 
+ASC_ele B_mpg_s 0.000498   0.00339     0.24   * 0.000689    0.0292       1.52        * 
+ASC_hyd B_mpg_s -0.000234  -0.00149    -0.32  * -0.000266   -0.0109      -1.97         
+B_mpg   B_mpg_s 0.0237     0.0241      -0.96  * 0.00350     0.0232       -2.81         
+ASC_not B_mpg_s 0.000326   0.00319     1.13   * 0.000602    0.0385       7.23          
+ASC_hyd B_mpg   -0.00394   -0.0761     2.02     -0.00882    -0.172       2.01          
+B_mpg   B_price -0.000154  -0.109      -3.18    -0.000195   -0.134       -3.21         
+ASC_ele B_mpg   -0.0270    -0.561      3.48     -0.0303     -0.609       3.48          
+ASC_ele B_price 2.15e-005  0.102       4.11     3.37e-005   0.148        3.96          
+ASC_not B_mpg   0.00905    0.269       6.65     0.00585     0.178        6.65          
+ASC_hyd B_price -1.19e-005 -0.0530     -6.97    2.14e-006   0.00909      -6.96         
+ASC_ele ASC_hyd 0.00302    0.392       10.12    0.00345     0.429        10.24         
+ASC_ele ASC_not 0.00200    0.399       -18.87   0.00221     0.428        -18.73        
+ASC_hyd ASC_not 0.00253    0.471       -30.85   0.00246     0.462        -30.59        
+ASC_not B_price 2.63e-005  0.179       32.19    3.75e-005   0.248        32.62         
+
+Smallest singular value of the hessian: 0.317944
+

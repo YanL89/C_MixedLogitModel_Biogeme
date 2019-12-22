@@ -1,0 +1,217 @@
+Spec File            : MNL.mod
+Data Files           : MVPS_ce_age_inattent.txt
+Parameter file       : default.par
+Choice               : choice 
+Weight               : $NONE
+Panel                : $NONE
+Exclude              : $NONE
+Group                : 1
+Model                : Multinomial Logit
+Aggregate last      : $NONE
+Aggregate weight     : $NONE
+Headers
+~~~~~~~
+   0 SimpleID
+   1 INATTENTIVE_RESP
+   2 Q_TotalDurationSecs
+   3 Gender
+   4 Vehicles
+   5 HomePark
+   6 ModelYear
+   7 Hybrid
+   8 BuyLease
+   9 UsedPurchaseYear
+   10 VehPrice
+   11 VehSize
+   12 KnowMPG
+   13 VehMPG
+   14 Age
+   15 Education
+   16 License
+   17 Occupation
+   18 CommuteFullLength
+   19 DriveCommute
+   20 WorkParkFee
+   21 HH_Head
+   22 Income
+   23 Kids
+   24 Adolescent
+   25 Adults
+   26 Workers
+   27 Zipcode
+   28 HomeType
+   29 scenario_num
+   30 year
+   31 scenario_year
+   32 in_year
+   33 choice
+   34 gas_price
+   35 ele_price
+   36 gasveh_price
+   37 gasveh_mpg
+   38 gasveh_range
+   39 gasveh_size
+   40 hev_price
+   41 hev_mpg
+   42 hev_range
+   43 hev_size
+   44 bev_price
+   45 bev_mpg
+   46 bev_range
+   47 bev_size
+   48 curveh_price
+   49 curveh_mpg
+   50 curveh_range
+   51 curveh_size
+   52 curveh_model_year
+Expressions
+~~~~~~~~~~~
+bev_mpg: bev_mpg 
+bev_mpg_s:  bev_mpg   /  1000 
+bev_price: bev_price 
+bev_price_s:  bev_price   /  1000 
+choice: choice 
+curveh_mpg: curveh_mpg 
+curveh_mpg_s:  curveh_mpg   /  1000 
+curveh_price: curveh_price 
+curveh_price_s:  curveh_price   /  1000 
+gasveh_mpg: gasveh_mpg 
+gasveh_mpg_s:  gasveh_mpg   /  1000 
+gasveh_price: gasveh_price 
+gasveh_price_s:  gasveh_price   /  1000 
+hev_mpg: hev_mpg 
+hev_mpg_s:  hev_mpg   /  1000 
+hev_price: hev_price 
+hev_price_s:  hev_price   /  1000 
+one: 1
+zero: 0
+Beta
+~~~~
+ASC_ele	x[0]=ASC_ele (0,0) [-10,10] FREE ID=0
+ASC_gas	x[4294967295]=ASC_gas (0,0) [-10,10] FIXED ID=1
+ASC_hyd	x[1]=ASC_hyd (0,0) [-10,10] FREE ID=2
+ASC_not	x[2]=ASC_not (0,0) [-10,10] FREE ID=3
+B_mpg	x[3]=B_mpg (0,0) [-10,10] FREE ID=4
+B_mpg_s	x[4]=B_mpg_s (0,0) [-10,10] FREE ID=5
+B_price	x[5]=B_price (0,0) [-10,10] FREE ID=6
+Attributes names
+~~~~~~~~~~~~~~~~
+0 SimpleID
+1 INATTENTIVE_RESP
+2 Q_TotalDurationSecs
+3 Gender
+4 Vehicles
+5 HomePark
+6 ModelYear
+7 Hybrid
+8 BuyLease
+9 UsedPurchaseYear
+10 VehPrice
+11 VehSize
+12 KnowMPG
+13 VehMPG
+14 Age
+15 Education
+16 License
+17 Occupation
+18 CommuteFullLength
+19 DriveCommute
+20 WorkParkFee
+21 HH_Head
+22 Income
+23 Kids
+24 Adolescent
+25 Adults
+26 Workers
+27 Zipcode
+28 HomeType
+29 scenario_num
+30 year
+31 scenario_year
+32 in_year
+33 choice
+34 gas_price
+35 ele_price
+36 gasveh_price
+37 gasveh_mpg
+38 gasveh_range
+39 gasveh_size
+40 hev_price
+41 hev_mpg
+42 hev_range
+43 hev_size
+44 bev_price
+45 bev_mpg
+46 bev_range
+47 bev_size
+48 curveh_price
+49 curveh_mpg
+50 curveh_range
+51 curveh_size
+52 curveh_model_year
+53 one
+54 curveh_price_s
+55 curveh_mpg_s
+56 gasveh_price_s
+57 gasveh_mpg_s
+58 bev_price_s
+59 bev_mpg_s
+60 hev_price_s
+61 hev_mpg_s
+Alternatives external/internal ID
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Ext -> Int
+1 -> 0
+2 -> 1
+3 -> 2
+4 -> 3
+Scale
+~~~~~
+Scale1	x[4294967295]=Scale1 (1,1) [1,1] FIXED ID=0
+Mu
+~~
+x[4294967295]=??? (1,1) [0,1] FIXED ID=4294967295
+Scale
+~~~~~
+Scale1	x[4294967295]=Scale1 (1,1) [1,1] FIXED ID=0
+Sample enumeration: 0
+
+~~~~~~~~~~~~~
+Utility functions
+~~~~~~~~~~~~~~~~~
+A1_not [1] ASC_not*one + B_price*curveh_price_s + B_mpg*curveh_mpg_s + B_mpg_s*curveh_mpg_s
+A2_gas [2] ASC_gas*one + B_price*gasveh_price_s + B_mpg*gasveh_mpg_s + B_mpg_s*gasveh_mpg_s
+A3_ele [3] ASC_ele*one + B_price*bev_price_s + B_mpg*bev_mpg_s + B_mpg_s*bev_mpg_s
+A4_hyd [4] ASC_hyd*one + B_price*hev_price_s + B_mpg*hev_mpg_s + B_mpg_s*hev_mpg_s
+Nonlinear utilities
+~~~~~~~~~~~~~~~~~~~
+Availability
+~~~~~~~~~~~~
+1->one
+2->one
+3->one
+4->one
+NL Nests
+~~~~~~~~
+Free parameters
+x[0]=x[0]=ASC_ele (0,0) [-10,10] FREE ID=0
+x[1]=x[1]=ASC_hyd (0,0) [-10,10] FREE ID=2
+x[2]=x[2]=ASC_not (0,0) [-10,10] FREE ID=3
+x[3]=x[3]=B_mpg (0,0) [-10,10] FREE ID=4
+x[4]=x[4]=B_mpg_s (0,0) [-10,10] FREE ID=5
+x[5]=x[5]=B_price (0,0) [-10,10] FREE ID=6
+Network GEV nodes
+*****************
+
+Network GEV nodes
+*****************
+
+RandomParameters
+~~~~~~~~~~~~~~~~
+B_mpg_B_mpg_s	B_mpg_B_mpg_s Location {x[3]=B_mpg (0,0) [-10,10] FREE ID=4} StdDev {x[4]=B_mpg_s (0,0) [-10,10] FREE ID=5}
+RandomExpressions
+~~~~~~~~~~~~~~~~~
+B_mpg_B_mpg_s	B_mpg [ B_mpg_s ] 
+CovarParameters
+~~~~~~~~~~~~~~~
+

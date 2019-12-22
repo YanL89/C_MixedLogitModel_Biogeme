@@ -1,0 +1,23 @@
+Biogeme MNL
+This file [MNL.F12] has automatically been generated.
+01/23/15 10:43:06
+Michel Bierlaire, EPFL
+biogeme 2.2 [Thu Mar 15 14:58:02 WEST 2012]
+Michel Bierlaire, EPFL
+   Example of a logit model for a transportation mode choice with 4 alternatives:
+   - not buy
+   - gasoline car
+   - electric car
+   - hybrid car
+END
+0	ASC_ele	F	0.332858	0.0881241
+1	ASC_hyd	F	-0.648579	0.0911645
+2	ASC_not	F	1.87377	0.0584651
+3	B_mpg	F	-1.82781	0.563882
+4	B_mpg_s	F	-0.091118	0.267576
+5	B_price	F	-0.0143455	0.00258253
+-1
+3795	-5260.99	-3241.7	-3216.71
+  25   0 01/23/15 10:43:06
+  42916  42838  46230 -60876 -17158  17751   2923  -1090   3845   2318
+  14791    908  24817 -13380   5598
